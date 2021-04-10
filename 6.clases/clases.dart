@@ -7,7 +7,7 @@ class Persona {
   obtenerNombre() => this.nombre;
 }
 
-class Vehiculos {
+abstract class Vehiculos with Aeropuerto {
   int? puertas;
   String? color;
 }
@@ -18,6 +18,34 @@ class Empleado extends Persona {
   Empleado(this.puesto) : super(nombre: "David", apellido: "Toro", edad: 30);
 
   Empleado.formJson(this.puesto);
+}
+
+class Trabajador implements Empleado {
+  @override
+  String? apellido;
+
+  @override
+  int? edad;
+
+  @override
+  String? nombre;
+
+  @override
+  obtenerNombre() {
+    // TODO: implement obtenerNombre
+    throw UnimplementedError();
+  }
+
+  @override
+  String puesto;
+
+  Trabajador(this.puesto);
+}
+
+mixin Aeropuerto {
+  int? salas;
+
+  nombreDelAeropuerto(String valor) => "El nombre es $valor";
 }
 
 void main() {
