@@ -10,7 +10,6 @@ void main() {
   }
 
   //Strings
-  //
   var texto1 = "";
   var texto2 = "";
   var texto3 = "";
@@ -33,4 +32,27 @@ void main() {
 
   var texto10 = "It \n s easy to escape the string delimiter.";
   print(texto10);
+
+//listas
+
+  var lista1 = ["mazda", "chevrolet", "kia", 8];
+
+  List<String> lista2 = ["mazda", "chevrolet", "kia"];
+
+  print(lista1.reversed);
+  print(lista1.first);
+  print(lista1.last);
+  print(lista2);
+
+  lista1.add("toyota");
+
+  lista1.clear();
+
+  var lista4;
+
+  var lista3 = ["toyota", ...?lista1, ...?lista2, ...?lista4];
+
+  print(lista3);
+
+  //Set
 }
