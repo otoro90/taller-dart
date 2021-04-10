@@ -23,3 +23,7 @@ String obtenerNombreTres({String nombre = "David", int? edad}) {
 String obtenerNombreCuatro({String nombre = "David", required int? edad}) {
   return "Mi nombre es $nombre y mi edad es $edad";
 }
+
+String obtenerNombreOpcionales(String nombre, [int? edad, String? apellido]) {
+  return "Mi nombre es $nombre $apellido y mi edad es $edad";
+}
