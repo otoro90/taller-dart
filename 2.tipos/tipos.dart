@@ -55,4 +55,17 @@ void main() {
   print(lista3);
 
   //Set
+
+  var set1 = {'mazda', 'chevrolet', 'kia'};
+
+  set1.add("toyota");
+  set1.add("chevrolet");
+  set1.add("Nuevo");
+
+  //maps
+  String llave = "black";
+  var traslation = {'red': 'rojo', 'blue': 'azul', "green": 'verde'};
+  traslation[llave] = "negro";
+
+  print(traslation);
 }
