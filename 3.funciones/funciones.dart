@@ -3,11 +3,13 @@ void main() {
   var resultado2 = obtenerNombreDos("Miguel");
   var resultado3 = obtenerNombreTres(nombre: "Miguel", edad: 30);
   var resultado4 = obtenerNombreCuatro(nombre: "Miguel", edad: 30);
+  var resultado5 = obtenerNombreOpcionales("Miguel", 30, "Toro");
 
   print(resultado1);
   print(resultado2);
   print(resultado3);
   print(resultado4);
+  print(resultado5);
 }
 
 String obtenerNombre(String valor) {
