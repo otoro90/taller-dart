@@ -4,6 +4,10 @@ void main() {
   String telefono = "3134965969";
   int? variabeAceptaNull = null;
 
+  final String segundoApellido = "Herrera";
+
+  segundoApellido = "";
+
   var apellido;
   print(nombre);
   print(apellido);
