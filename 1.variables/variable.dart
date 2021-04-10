@@ -6,8 +6,6 @@ void main() {
 
   final String segundoApellido = "Herrera";
 
-  segundoApellido = "";
-
   var apellido;
   print(nombre);
   print(apellido);
